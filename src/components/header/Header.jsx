@@ -26,37 +26,43 @@ const Header = () => {
 				<div className={s.menu__hamburger} onClick={() => setIsOpen(!isOpen)}>
 					<span>menu</span>
 					<div className={s.menu__hamburger__navigation}>
-							<div className={`${s.menu__hamburger__navigation__dots} ${isOpen ? s.hidden: s.active}`}></div>
-							<div className={`${s.menu__hamburger__navigation__toggleClose} ${isOpen ? s.active: s.hidden}`}></div>
+						<div
+							className={`${s.menu__hamburger__navigation__dots} ${
+								isOpen ? s.hidden : ''
+							}`}
+						></div>
+						<div
+							className={`${s.menu__hamburger__navigation__toggleClose} ${
+								isOpen ? '' : s.hidden
+							}`}
+						></div>
 					</div>
 				</div>
 				<GridBottom />
 			</div>
 
-			<div
-				className={`${s.header__navigation} ${
-					isOpen ? s.header__navigationisOpen : ''
-				}`}
-			>
-				<div className={s.header__navigation__item}>
-					<a href="#about">
-						About <span>About</span>
-					</a>
-				</div>
-				<div className={s.header__navigation__item}>
-					<a href="#skills">
-						Works <span>Works</span>
-					</a>
-				</div>
-				<div className={s.header__navigation__item}>
-					<a href="#projects">
-						Skills <span>Skills</span>
-					</a>
-				</div>
-				<div className={s.header__navigation__item}>
-					<a href="#contact">
-						Contact <span>Contact</span>
-					</a>
+			<div className={`${s.header__nav} ${isOpen ? s.header__navIsOpen : ''}`}>
+				<div className={s.header__nav__navLink}>
+					<div className={s.header__nav__navLink__item}>
+						<a href="#about">
+							About <span>About</span>
+						</a>
+					</div>
+					<div className={s.header__nav__navLink__item}>
+						<a href="#skills">
+							Works <span>Works</span>
+						</a>
+					</div>
+					<div className={s.header__nav__navLink__item}>
+						<a href="#projects">
+							Skills <span>Skills</span>
+						</a>
+					</div>
+					<div className={s.header__nav__navLink__item}>
+						<a href="#contact">
+							Contact <span>Contact</span>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>

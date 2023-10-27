@@ -1,0 +1,50 @@
+.contact {
+    position: relative;
+
+    a {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.85rem;
+        color: var(--white-color-light);
+        text-decoration: none;
+
+        .contact__icon {
+            z-index: 0;
+            position: relative;
+            height: 1.5rem;
+            width: 1.5rem;
+            transition: color .2s cubic-bezier(.645, .045, .355, 1);
+
+            svg {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            &::after {
+                z-index: -1;
+                content: '';
+                display: block;
+                background: var(--primary-dark-color);
+                border-radius: 50%;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                transform: scale(0);
+                transition: transform .2s cubic-bezier(.645, .045, .355, 1);
+            }
+        }
+
+        &:hover {
+            .contact__icon::after {
+                    transform: scale(1);
+            }
+        }
+    }
+
+
+}
