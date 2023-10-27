@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { Gabarito } from 'next/font/google';
-import '@/styles/globals.scss';
 
 const gabarito = Gabarito({ subsets: ['latin'] });
 
