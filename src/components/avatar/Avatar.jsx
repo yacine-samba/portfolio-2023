@@ -11,7 +11,7 @@ export function Model(props) {
 	})
 
 	return (
-		<group ref={group} {...props} position={[0, 0, 3]} dispose={null}>
+		<group ref={group} {...props} position={[-0.175, 0.25, 3]} dispose={null}>
 			<group name="Scene">
 				<group name="ME" >
 					<primitive object={nodes.Hips} />

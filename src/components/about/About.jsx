@@ -23,8 +23,8 @@ const About = () => {
 						rotation={[-Math.PI / 2, 0, 0]}
 					/>
 					<pointLight
-						intensity={50}
-						position={[3, 2, 2]}
+						intensity={30}
+						position={[3, 2, 5]}
 						color="white"
 						rotation={[-Math.PI / 2, 0, 0]}
 					/>
@@ -34,7 +34,7 @@ const About = () => {
 			<div className={s.aboutSection__container}>
 				<h1>about me</h1>
 				<div className={s.aboutSection__container__content}>
-					<p>I’m Yacine, a FrontEnd developer based in Paris, France.</p>
+					<p>I’m Yacine, a FrontEnd developer based in Paris, France.</p><br />
 					<p>
 						An entrepreneur at heart and a student who loves to create and
 						immerse himself in new projects.

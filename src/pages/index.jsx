@@ -4,6 +4,8 @@ import localFont from 'next/font/local';
 import Grid from '../components/grid/Grid';
 import Hero from '../components/hero/Hero';
 import About from '../components/about/About';
+import MyWork from '../components/myWork/myWork';
+import Footer from '../components/footer/Footer';
 
 const integralFont = localFont({
 	src: '../font/integral/IntegralCF-ExtraBold.woff2',
@@ -38,6 +40,8 @@ const Home = () => {
 			<Header />
 			<Hero />
 			<About />
+			<MyWork />
+			<Footer />
 		</div>
 	);
 };
