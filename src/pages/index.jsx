@@ -4,7 +4,7 @@ import localFont from 'next/font/local';
 import Grid from '../components/grid/Grid';
 import Hero from '../components/hero/Hero';
 import About from '../components/about/About';
-import MyWork from '../components/myWork/myWork';
+import MyWork from '../components/myWork/MyWork';
 import Footer from '../components/footer/Footer';
 
 const integralFont = localFont({

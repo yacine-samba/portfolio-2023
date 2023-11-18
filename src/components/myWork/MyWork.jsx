@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import s from './myWork.module.scss';
+import s from './MyWork.module.scss';
 
 const MyWork = () => {
 	return (
