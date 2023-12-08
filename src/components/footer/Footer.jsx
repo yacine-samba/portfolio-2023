@@ -6,7 +6,7 @@ const Footer = () => {
 			<div className={s.footer__content}>
 				<div>
 					<p className={s.footer__titleDetails}>Contact Details</p>
-					<a href="mailto:ysambamezaache@gmail.com" className={s.footer__item}>
+					<a href="mailto:ysambamezaache@gmail.com" className={s.footer__item} target="_blank">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							width="18"
@@ -25,6 +25,7 @@ const Footer = () => {
 						<a
 							href="https://www.linkedin.com/in/yacine-samba/"
 							className={s.footer__social__links__item}
+							target="_blank"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -39,6 +40,7 @@ const Footer = () => {
 						<a
 							href="https://github.com/yacine-samba"
 							className={s.footer__social__links__item}
+							target="_blank"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -53,6 +55,7 @@ const Footer = () => {
 						<a
 							href="https://www.behance.net/yacinesamba"
 							className={s.footer__social__links__item}
+							target="_blank"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -67,6 +70,7 @@ const Footer = () => {
 						<a
 							href="https://www.instagram.com/utopic.wrld/"
 							className={s.footer__social__links__item}
+							target="_blank"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +87,7 @@ const Footer = () => {
 			</div>
 
 			<div className={s.footer__credit}>
-				<p className={s.footer__titleDetails}>© 2023 édition - Yacine samba</p>
+				<p className={s.footer__titleDetails}>© 2023 Edition - Yacine samba</p>
 			</div>
 		</div>
 	);

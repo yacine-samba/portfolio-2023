@@ -6,24 +6,24 @@ import Avatar from '../avatar/Avatar';
 
 const About = () => {
 	return (
-		<div className={s.aboutSection}>
+		<div className={s.aboutSection} id='about'>
 			<div className={s.aboutSection__canvas}>
 				<Canvas camera={{ position: [0, 1.75, 4.5] }}>
 					<ambientLight />
 					<pointLight
-						intensity={100}
+						intensity={50}
 						position={[-3, 1.5, 2.5]}
 						color="purple"
 						rotation={[-Math.PI / 2, 0, 0]}
 					/>
 					<pointLight
-						intensity={30}
+						intensity={10}
 						position={[-1.5, 3, 2.5]}
-						color="blue"
+						color="#00BF6C"
 						rotation={[-Math.PI / 2, 0, 0]}
 					/>
 					<pointLight
-						intensity={30}
+						intensity={40}
 						position={[3, 2, 5]}
 						color="white"
 						rotation={[-Math.PI / 2, 0, 0]}

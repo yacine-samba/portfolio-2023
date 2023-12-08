@@ -1,5 +1,8 @@
 .header {
+    position: relative;
+
     .menu {
+        z-index: 3;
         position: relative;
         display: flex;
         align-items: center;
@@ -34,6 +37,7 @@
         }
 
         &__hamburger {
+            z-index: 3;
             cursor: pointer;
             display: flex;
             align-items: center;
@@ -63,7 +67,7 @@
                 }
 
                 &__dots {
-                    z-index: 1;
+                    z-index: 4;
                     position: absolute;
                     top: 50%;
                     left: 50%;
@@ -157,17 +161,20 @@
     }
 
     &__nav {
-        display: none;
+        display: flex;
         flex-direction: column;
         justify-content: center;
-        z-index: 1;
+        z-index: 2;
         position: absolute;
-        right: 0;
-        opacity: 0;
-        height: 90vh;
+        top: 0;
+        right: -100%;
+        // opacity: 0;
+        height: 100vh;
         background: rgba(0, 0, 0, 0.80);
         width: 100%;
         backdrop-filter: blur(2px);
+        transition: all 0.3s ease-in;
+
 
         &__navLink {
             display: flex;
@@ -175,17 +182,12 @@
             gap: 1.25rem;
             flex-direction: column;
             padding: 0 2rem;
-            // justify-content: center;
-            // align-items: center;
             margin-bottom: 2rem;
 
             &__item {
                 position: relative;
 
                 a {
-                    // position: absolute;
-                    // top: 0;
-                    // left: 50%;
                     transform: translateX(-50%);
                     color: var(--text-color);
                     text-decoration: none;
@@ -193,6 +195,13 @@
                     font-style: normal;
                     font-weight: 500;
                     line-height: normal;
+
+                    p{
+                        position: relative;
+                        top: 0;
+                        display: inline-block;
+                        transition: all 0.3s ease-in-out;
+                    }
 
                     span {
                         position: absolute;
@@ -208,6 +217,11 @@
                     }
 
                     &:hover {
+                        p{
+                            opacity: 0;
+                            visibility: hidden;
+                            top: 100%;
+                        }
                         span {
                             opacity: 1;
                             visibility: visible;
@@ -218,16 +232,12 @@
             }
         }
 
-        &__social{
-            
-        }
     }
 
     &__navIsOpen {
-        display: flex;
-        opacity: 1;
-        visibility: visible;
-
-        &__navLink {}
+        right: 0;
+        // display: flex;
+        // opacity: 1;
+        transition: all 0.3s ease-out;
     }
 }

@@ -5,12 +5,8 @@
     h1 {
         font-size: 3rem;
         margin-bottom: 1rem;
+        font-weight: 500;
     }
-
-    p {
-        color: var(--white-color-light);
-    }
-
 
     &__projects {
         display: flex;
@@ -21,21 +17,44 @@
 }
 
 .project {
+    position: relative;
     height: 20rem;
-    background-color: var(--primary-dark-color);
     padding: 1.5rem;
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 
-    h2{
+    p{
+        z-index: 1;
+        position: absolute;
+        top: 1rem;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        font-weight: 500;
+    }
+
+    img {
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 0.5rem;
+        opacity: 0.75;
+    }
+
+    h2 {
+        z-index: 1;
         font-size: 1.5rem;
         margin-bottom: 1rem;
         font-weight: 500;
     }
 
     &__tags {
+        z-index: 1;
         span {
             background-color: var(--white-color-light);
             padding: 0.25rem 0.75rem;

@@ -1,13 +1,14 @@
 .aboutSection {
     padding: 2rem;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: row;
     position: relative;
 
-    h1{
+    h1 {
         font-size: 3rem;
         margin-bottom: 1rem;
+        font-weight: 500;
     }
 
     &__canvas {
@@ -19,12 +20,14 @@
 
     &__container {
         z-index: 1;
-        margin: 2rem 0 0 8rem;
+        margin: 2rem 1rem 0 8.25rem;
         width: 100%;
 
-        &__content{
+        &__content {
             color: var(--white-color-light);
-            font-size: 2rem;
+            font-size: 1.5rem;
+            font-weight: 400;
+            line-height: 2rem;
         }
     }
 }

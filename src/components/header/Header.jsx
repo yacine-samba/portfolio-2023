@@ -4,12 +4,11 @@ import s from './Header.module.scss';
 
 const Header = () => {
 	const [isOpen, setIsOpen] = useState(false);
-	console.log(isOpen);
 
 	return (
 		<div className={s.header}>
 			<div className={s.menu}>
-				<div className={s.menu__name}>
+				<a href="./" className={s.menu__name}>
 					<div className={s.menu__name__logo}>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +20,7 @@ const Header = () => {
 					<p>
 						Yacine <span>S.</span>
 					</p>
-				</div>
+				</a>
 
 				<div className={s.menu__hamburger} onClick={() => setIsOpen(!isOpen)}>
 					<span>menu</span>
@@ -44,23 +43,13 @@ const Header = () => {
 			<div className={`${s.header__nav} ${isOpen ? s.header__navIsOpen : ''}`}>
 				<div className={s.header__nav__navLink}>
 					<div className={s.header__nav__navLink__item}>
-						<a href="#about">
-							About <span>About</span>
+						<a href="#about" onClick={() => setIsOpen(false)}>
+							<p>About</p> <span>About</span>
 						</a>
 					</div>
 					<div className={s.header__nav__navLink__item}>
-						<a href="#skills">
-							Works <span>Works</span>
-						</a>
-					</div>
-					<div className={s.header__nav__navLink__item}>
-						<a href="#projects">
-							Skills <span>Skills</span>
-						</a>
-					</div>
-					<div className={s.header__nav__navLink__item}>
-						<a href="#contact">
-							Contact <span>Contact</span>
+						<a href="#works" onClick={() => setIsOpen(false)}>
+							<p>Works</p> <span>Works</span>
 						</a>
 					</div>
 				</div>
