@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { useEffect, useState } from 'react';
+import s from './MyWork.module.scss';
 import Link from 'next/link';
 
 const MyWork = () => {
