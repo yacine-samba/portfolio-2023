@@ -32,6 +32,7 @@ const domaineDispNar = localFont({
 });
 
 const gabarito = Gabarito({
+	subsets: ['latin-ext'],
 	weight: [
 		'400',
 		'500',
