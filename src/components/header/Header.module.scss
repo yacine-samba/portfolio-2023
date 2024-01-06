@@ -2,7 +2,8 @@
     z-index: 99;
     position: relative;
     position: fixed;
-    width: 1024px;
+    max-width: 1024px;
+    width: 100%;
     top: 0;
     backdrop-filter: blur(50.5px);
     background-color: #0f0f15b6;
