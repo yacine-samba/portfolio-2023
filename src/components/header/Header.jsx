@@ -37,23 +37,23 @@ const Header = () => {
 						></div>
 					</div>
 				</div>
-				<GridBottom />
 			</div>
 
 			<div className={`${s.header__nav} ${isOpen ? s.header__navIsOpen : ''}`}>
 				<div className={s.header__nav__navLink}>
 					<div className={s.header__nav__navLink__item}>
 						<a href="#about" onClick={() => setIsOpen(false)}>
-							<p>About</p> <span>About</span>
+							<p>about</p> <span>about</span>
 						</a>
 					</div>
 					<div className={s.header__nav__navLink__item}>
 						<a href="#works" onClick={() => setIsOpen(false)}>
-							<p>Works</p> <span>Works</span>
+							<p>works</p> <span>works</span>
 						</a>
 					</div>
 				</div>
 			</div>
+			<GridBottom />
 		</div>
 	);
 };

@@ -1,20 +1,28 @@
 .hero {
+    max-width: 620px;
+    margin: auto;
+    margin-top: 2rem;
     padding: var(--col-gap);
 
     &__myName {
-        position: relative;
         font-size: 2rem;
         font-family: var(--font-integral);
-        padding: 4rem 1rem;
+        padding: 3rem 0;
 
-        span {
-            position: absolute;
-            left: 7rem;
-            top: 5.5rem;
-            color: var(--primary-color);
-            font-family: var(--font-domaineDispNar), serif;
-            font-weight: 800;
-            text-transform: uppercase;
+        h1 {
+            width: 350px;
+            margin: auto;
+            position: relative;
+
+            span {
+                position: absolute;
+                left: 7rem;
+                top: 1.75rem;
+                color: var(--primary-color);
+                font-family: var(--font-domaineDispNar), serif;
+                font-weight: 800;
+                text-transform: uppercase;
+            }
         }
     }
 

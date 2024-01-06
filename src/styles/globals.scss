@@ -13,6 +13,7 @@
   --primary-color: #00BF6C;
   --primary-dark-color: #0B814E;
   --background-color: #0F0F15;
+  --background-color-light: #191924;
   --border-color: #2f2f35;
 
   //padding
@@ -21,7 +22,8 @@
 
 html,
 body {
-  max-width: 100vw;
+  max-width: 1024px;
+  margin: auto;
   overflow-x: hidden;
   background: var(--background-color);
   color: var(--text-color);
@@ -38,7 +40,10 @@ a{
 }
 
 .myWorkSection {
-  padding: 2rem;
+  max-width: 620px;
+  margin: auto;
+  margin-top: 4rem;
+  padding:var(--col-gap);
   position: relative;
 
   h1 {

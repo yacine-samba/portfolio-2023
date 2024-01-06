@@ -1,4 +1,6 @@
-.grid{
+.grid {
+    max-width: 700px;
+    margin: auto;
     z-index: 800;
     position: fixed;
     top: 0;
@@ -11,7 +13,7 @@
     pointer-events: none;
     user-select: none;
 
-    &__line{
+    &__line {
         width: 1px;
         flex-shrink: 0;
         flex-grow: 0;
@@ -19,7 +21,7 @@
     }
 }
 
-.gridBottom{
+.gridBottom {
     position: absolute;
     bottom: 0;
     left: 0;

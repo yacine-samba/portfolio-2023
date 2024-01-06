@@ -1,4 +1,6 @@
 .myWorkSection {
+    max-width: 620px;
+    margin: auto;
     padding: 2rem;
     position: relative;
 
@@ -25,7 +27,7 @@
     flex-direction: column;
     justify-content: flex-end;
 
-    p{
+    p {
         z-index: 1;
         position: absolute;
         top: 1rem;
@@ -55,6 +57,7 @@
 
     &__tags {
         z-index: 1;
+
         span {
             background-color: var(--white-color-light);
             padding: 0.25rem 0.75rem;
