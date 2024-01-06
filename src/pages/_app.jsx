@@ -1,5 +1,6 @@
 import '@/styles/globals.scss';
 import localFont from 'next/font/local';
+import { Gabarito } from 'next/font/google'
 import Footer from '../components/footer/Footer';
 import Grid from '../components/grid/Grid';
 import Header from '../components/header/Header';
@@ -30,9 +31,21 @@ const domaineDispNar = localFont({
 	variable: '--font-domaineDispNar',
 });
 
+const gabarito = Gabarito({
+	weight: [
+		'400',
+		'500',
+		'600',
+		'700',
+		'800',
+		'900',
+	],
+})
+
+
 export default function App({ Component, pageProps }) {
 	return (
-		<div className={`${integralFont.variable} ${domaineDispNar.variable}`}>
+		<div className={`${integralFont.variable} ${domaineDispNar.variable} ${gabarito.className}`}>
 			<Grid />
 			<Header />
 			<Component {...pageProps} />
