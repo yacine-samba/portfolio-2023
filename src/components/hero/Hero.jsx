@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import ContactIcon from '../contactIcon/ContactIcon';
 import s from './Hero.module.scss';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
