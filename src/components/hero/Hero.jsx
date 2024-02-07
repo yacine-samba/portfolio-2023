@@ -32,9 +32,7 @@ const Hero = () => {
 			<div className={s.hero__content}>
 				<h3 className={s.hero__content__title}>FrontEnd Developer</h3>
 				<p className={s.hero__content__details}>
-					Enthusiastic, creative and hungry for a challenge, I am here to shake
-					up ideas, breathe life into projects and ensure that every adventure
-					is a memorable experience.
+				Enthusiastic, creative and looking for a challenge, I'm here to create new ideas, bring projects to life and make every adventure a memorable experience.
 				</p>
 			</div>
 			<div className={s.hero__scroll}>

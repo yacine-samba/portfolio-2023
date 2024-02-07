@@ -13,7 +13,7 @@ const LocketChat = () => {
 				]}
 				contributor={['Yacine Samba']}
 				link="https://andelor.herokuapp.com/"
-				about="LocketChat is a full-stack web application that allows users to create and share their own stories. It is built with React, Redux, Node.js, Express, MongoDB, Mongoose, JWT, Bcrypt, Axios, Sass, and Bootstrap."
+				about="LocketChat is a student project that aims to create a chat room inspired by existing messaging systems (Discord, Slack), and which allows users to discuss and create links either in private messages or directly in the general room."
 				github="https://github.com/yacine-samba/LocketChatProject"
 				imgSrc="/img/project/locketChat/locketChat.jpg"
 			/>

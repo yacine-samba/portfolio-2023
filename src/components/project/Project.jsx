@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import s from './Project.module.scss';
 import Image from 'next/image';
 
-const Project = ({ title, date, tag, link, github, imgSrc, about, contributor }) => {
+const Project = ({ title, date, tag, link, github, imgSrc, about, aboutMore, contributor }) => {
 
 	const [tags, setTags] = useState([]);
 	const [contributors, setContributors] = useState([]);
@@ -46,6 +46,7 @@ const Project = ({ title, date, tag, link, github, imgSrc, about, contributor })
 				<div className={s.project__main__about}>
 					<h2>about</h2>
 					<p className={s.project__main__about__details}>{about}</p>
+					<p className={s.project__main__about__details}>{aboutMore}</p>
 					<div className={s.project__main__about__tags}>
 						{tags
 							? tag && tags.map((tag, key) => <span key={key}>{tag}</span>)

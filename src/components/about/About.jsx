@@ -11,7 +11,7 @@ const About = () => {
 				<Canvas camera={{ position: [0, 1.75, 4.5] }}>
 					<ambientLight />
 					<pointLight
-						intensity={50}
+						intensity={75}
 						position={[-3, 1.5, 2.5]}
 						color="purple"
 						rotation={[-Math.PI / 2, 0, 0]}
@@ -23,7 +23,7 @@ const About = () => {
 						rotation={[-Math.PI / 2, 0, 0]}
 					/>
 					<pointLight
-						intensity={40}
+						intensity={50}
 						position={[3, 2, 5]}
 						color="white"
 						rotation={[-Math.PI / 2, 0, 0]}
