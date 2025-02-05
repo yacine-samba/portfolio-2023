@@ -1,0 +1,12 @@
+.background{
+    &__shape{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 150px;
+        z-index: -1;
+        // background-color: red;
+        background: linear-gradient(135deg, var(--primary-color), var(--background-color-light));
+    }
+}
