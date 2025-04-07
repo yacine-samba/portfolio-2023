@@ -8,6 +8,7 @@ const MyWork = () => {
 		<div className={s.myWorkSection} id='works'>
 			<h1>my work</h1>
 			<div className={s.myWorkSection__projects}>
+				<Project title="xFlow" date="2021" tag={['Next.js', 'Typescript', 'Scss', 'Node.js', 'Parse server', 'Back4App']} imgSrc="/img/project/xFlow/xFlow.png" />
 				<Project title="LocketChat" date="2023" tag={['Next', 'UX/UI Design']} imgSrc="/img/project/locketChat/locketChat.jpg" />
 				<Project title="Andelor" date="2021" tag={['Site de réservation', 'React', 'Symfony']} imgSrc="/img/project/andelor/andelor.png" />
 				<Project title="MyFacturation" date="2023" tag={['React', 'Symfony', 'Twig']} imgSrc="/img/project/myFacturation/myFacturation.jpg"/>
